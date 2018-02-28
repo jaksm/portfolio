@@ -10,13 +10,18 @@
   position: absolute;
   right: 0;
   transform: translate(0, -25%);
-  width: 25rem;
+  width: 35vw;
   height: 100vh;
   word-break: break-all;
   color: $text-color;
-  font-size: 15rem;
+  font-size: 33vh;
   line-height: 1.5;
   z-index: -1;
+  @media screen and (max-width: 600px) {
+    transform: translate(0, -15%);
+    width: 30vw;
+    font-size: 17vh;
+  }
 }
 
 @mixin divider($size, $top) {
