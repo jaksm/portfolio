@@ -1,0 +1,30 @@
+@mixin heading($orientation, $size, $color) {
+  transform: rotate($orientation);
+  font-size: $size;
+  color: $color;
+  & > span {
+    color: $accent;
+  }
+}
+@mixin huge-heading-right() {
+  position: absolute;
+  right: 0;
+  transform: translate(0, -25%);
+  width: 25rem;
+  height: 100vh;
+  word-break: break-all;
+  color: $text-color;
+  font-size: 15rem;
+  line-height: 1.5;
+  z-index: -1;
+}
+
+@mixin divider($size, $top) {
+  display: block;
+  background-color: $accent;
+  height: $size;
+  width: $size / 3;
+  position: absolute;
+  top: $top;
+  right: 0;
+}

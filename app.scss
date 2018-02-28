@@ -1,0 +1,34 @@
+@import '_variables.scss';
+// @import '_theme.sass';
+@import '_mixins.scss';
+
+@import '_slide1.scss';
+
+.huge-heading-right {
+  @include huge-heading-right();
+}
+.divider {
+  @include divider(4.5rem, 7rem);
+}
+.accent {
+  color: $accent;
+  letter-spacing: .1em;
+}
+.toggle {
+  word-wrap: break-word;
+  font-weight: $heading-weight;
+  font-size: 1.25rem;
+  width: 3.5rem;
+  position: absolute;
+  letter-spacing: .1em;
+  cursor: pointer;
+  top: 1rem;
+  left: 1rem;
+  text-decoration: line-through;
+  text-decoration-color: $accent;
+  transition: all .3s ease;
+  &:hover {
+    text-decoration-color: $text-color;
+    color: $accent;
+  }
+}

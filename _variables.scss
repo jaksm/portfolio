@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,900&subset=latin-ext');
+$bg: #292929;
+$family: 'Raleway',
+sans-serif;
+$text-color: #fff;
+$text-weight: 300;
+$accent: #ffbd4a;
+$heading-weight: 900;
+body {
+  background-color: $bg;
+  color: $text-color;
+  font-family: $family;
+  font-weight: $text-weight !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  text-transform: uppercase;
+  font-size: 13px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $heading-weight !important;
+  margin: 0;
+  cursor: default;
+}

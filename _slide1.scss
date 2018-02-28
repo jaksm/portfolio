@@ -1,0 +1,44 @@
+.title {
+  @include heading(0, 8rem, $accent);
+  position: absolute;
+  right: 15rem;
+  top: 8rem;
+}
+
+#hint {
+  position: absolute;
+  right: 15rem;
+  bottom: 8rem;  
+}
+
+#t1 {
+  @include heading(-90deg, 2rem, $text-color);
+  position: absolute;
+  top: 21rem;
+  right: 20rem;
+}
+
+#t2 {
+  @include heading(0, 2rem, $text-color);
+  position: absolute;
+  top: 16rem;
+  right: 27rem;
+}
+#t3 {
+  @include heading(0, 2rem, $text-color);
+  position: absolute;
+  top: 19rem;
+  right: 27rem;
+}
+#t4 {
+  @include heading(0, 2rem, $text-color);
+  position: absolute;
+  top: 22rem;
+  right: 27rem;
+}
+#t5 {
+  @include heading(0, 2rem, $text-color);
+  position: absolute;
+  top: 25rem;
+  right: 27rem;
+}
